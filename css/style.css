@@ -1,0 +1,123 @@
+:root {
+    --primary-text-color: #000000;
+    --secondary-text-color:#3E3E3E;
+    --thirty-text-color:#9FADC2;
+    --primary-background-color:#F2F2F2;
+    --color-text-on-background: #ffffff;
+    --accent-color:#0075FF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-background-color);
+}
+li {
+    list-style: none;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+ul, ol, p {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    max-width: 1020px;
+}
+
+.section {
+    padding-top: 104px;
+}
+/* Section-Hero */
+.hero {
+    background-image: url(../images/hero\ \(2\).jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 1260px;
+    height: 700px;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    width: 498px;
+    height: 161px;
+    letter-spacing: -1.5px;
+    color: var(--color-text-on-background);
+    padding-top: 459px;
+    padding-left: 120px;
+}
+
+/* Section-About */
+.about {
+    display: flex;
+    justify-content: center;
+}
+.about__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    color: var(--primary-text-color);
+    width: 324px;
+    height: 145px;
+}
+
+.about__title--accent {
+    color: var(--accent-color);
+}
+
+.about__paragraph--accent {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.about__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.68;
+    color: var(--secondary-text-color);
+    width: 498px;
+    height: 357px;
+}
+/* Section-Gallery */
+
+.gallery__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    color:var(--primary-text-color);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.gallery__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item-first,
+.gallery__item-thirt,
+.gallery__item-fifth {
+    margin-right: 24px;
+}
+
+/* Section-Testimonials */
+
+.testimonials__lists {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.testimonials__list {
+    width: 324px;
+    text-align:center;
+    
+}
