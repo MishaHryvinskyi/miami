@@ -271,6 +271,15 @@ ul, ol, p {
    
 }
 
+.footer__input {
+    padding-left: 17px;
+    color: #8F99A8;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+}
+
+
 /* ------------Button-Style---------------- */
 .button__secondary {
     display: flex;
