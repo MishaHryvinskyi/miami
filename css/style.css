@@ -86,7 +86,7 @@ ul, ol, p {
     color: var(--color-text-on-background);
     margin-top: 350px;
 }
-/*  Owerflow */
+/*  Owerflow  */
 .owerflow {
     height: 700px;
     background-color: var(--accent-color);
