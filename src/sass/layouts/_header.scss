@@ -1,0 +1,28 @@
+.header {
+    width: 1260px;
+    position: absolute;
+    z-index: 1;
+    width: 1260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+}
+
+// .header__wrapper {
+//     width: 1260px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     background-color: inherit;
+// }
+
+.header__svg {
+    width: 24px;
+    height: 24px;
+}
+
+.header__svg-logo {
+    width: 136px;
+    height: 80px;
+}

@@ -1,0 +1,92 @@
+
+@media screen and(min-width:320px){
+    .footer {
+        width: auto;
+        height: 206px;
+        background-image: url(../images/footer/footer-background-mobile-1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .footer {
+            background-image: url(../images/footer/footer-background-mobile-2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .footer {
+            background-image: url(../images/footer/footer-background-mobile-3x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .footer {
+            background-image: url(../images/footer/footer-background-mobile-4x.jpg);
+        }
+    }
+
+    .logo-svg {
+        width: 82px;
+        height: 48px;
+    }
+}
+
+@media screen and(min-width:1260px){
+    .footer {
+        width: auto;
+        height: 359px;
+        background-image: url(../images/footer/footer-background-1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .footer {
+            background-image: url(../images/footer/footer-background-2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .footer {
+            background-image: url(../images/footer/footer-background-3x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .footer {
+            background-image: url(../images/footer/footer-background-4x.jpg);
+        }
+    }
+
+    .logo-svg {
+        width: 136px;
+        height: 80px;
+    }
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 247px;
+    // margin-bottom: 32px;
+}
