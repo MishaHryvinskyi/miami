@@ -1,2 +1,11 @@
 @import './common';
-@import './example';
+@import './base/reset';
+@import './base/base.scss';
+@import './utils/variables';
+
+@import './components/container';
+@import './components/title';
+@import './components/section';
+@import './components/btn';
+@import './components/inpt';
+
