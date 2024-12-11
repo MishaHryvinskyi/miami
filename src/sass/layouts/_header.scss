@@ -1,21 +1,16 @@
 .header {
-    width: 1260px;
     position: absolute;
-    z-index: 1;
-    width: 1260px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1020px;
+    z-index: 2; 
+    padding: 24px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: inherit;
 }
-
-// .header__wrapper {
-//     width: 1260px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     background-color: inherit;
-// }
 
 .header__svg {
     width: 24px;
@@ -25,4 +20,18 @@
 .header__svg-logo {
     width: 136px;
     height: 80px;
+}
+
+.header__btn {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
 }
