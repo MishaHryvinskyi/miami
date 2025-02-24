@@ -1,8 +1,3 @@
-img {
-    display: block;
-    border-radius: 8px;
-}
-
 .gallery__item:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -22,4 +17,18 @@ img {
 .gallery__accent {
     font-weight: 700;
     color: var(--accent-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .gallery-img {
+        margin-right: 20px;
+    }
+
+    .gallery__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .gallery__paragraph {
+        margin-top: 16px;
+    }
 }
