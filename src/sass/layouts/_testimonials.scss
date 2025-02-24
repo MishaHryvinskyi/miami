@@ -1,0 +1,76 @@
+.testimonials__list {
+    display: flex;       
+}
+
+.testimonials__item {
+   text-align: center;
+}
+
+.testimonials__title {
+    color: var(--accent-color);
+    font-size: var(--secondary-title-fs);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 4px 0;
+
+    &::before {
+        content: "";
+        display: flex;
+        background-size: contain;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}
+
+@each $people in Leslie-Mckinney, Scarlett-Hawkins, Max-Henry {
+    .#{$people}-title::before {
+      background-image: url('../images/reviews/#{$people}.png');
+    }
+}
+
+.testimonials__paragraph {
+    color: var(--secondary-color);
+    font-size: var(--smal-text);
+    line-height: 1.9;
+    margin: 0 0 4px 0;
+}
+
+@media screen and (min-width: 320px) {
+    .testimonials__list {
+        flex-direction: column;
+    }
+
+    .testimonials__item {
+        width: 280px;
+    }
+
+    .testimonials__item:not(:last-child) {
+        margin: 0 0 48px 0;
+    }
+
+    .testimonials__title::before {
+        width: 153px;
+        height: 153px;
+        margin-bottom: 28px;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .testimonials__list {
+        flex-direction: row;
+    }
+
+    .testimonials__item {
+        width: 324px;
+
+        &:not(:last-child) {
+            margin: 0 24px 0 0;
+        }
+    }
+
+    .testimonials__title::before {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 32px;
+    }
+}
