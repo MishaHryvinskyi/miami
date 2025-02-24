@@ -1,0 +1,25 @@
+img {
+    display: block;
+    border-radius: 8px;
+}
+
+.gallery__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.gallery__img-wrapper {
+    display: flex;
+}
+
+.gallery-img {
+    margin-right: 24px;
+}
+
+.gallery__paragraph {
+    margin-top: 24px;
+}
+
+.gallery__accent {
+    font-weight: 700;
+    color: var(--accent-color);
+}
