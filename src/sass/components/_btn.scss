@@ -11,7 +11,7 @@
     background-color: inherit;
     
     @media screen and (min-width: 320px) and (max-width: 480px) {
-        width: 280px;
+        width: 100%;
     }
 }
 
@@ -42,7 +42,7 @@
     color: var(--main-color);
     background-color: var(--accent-color);
     @media screen and (min-width: 320px) and (max-width: 1259px) {
-        width: 280px;
+        width: 100%;
     }
     @media screen and (min-width: 1260px) {
         width: 411px;
