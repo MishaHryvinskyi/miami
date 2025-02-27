@@ -5,20 +5,16 @@ const { btnClose, btnOpen, menuLink, menuList, menu } = refs;
 btnOpen.addEventListener('click', openMenu)
 btnClose.addEventListener('click', closeMenu)
 
-if (menuList) {
-    menuList.addEventListener('click', onLinkClickClose);
-}
-
-if (menuLink) {
-    menuLink.addEventListener('click', onLinkClickClose);
-}
-
 function openMenu() {
+    menuList.addEventListener('click', onLinkClickClose);
+    menuLink.addEventListener('click', onLinkClickClose);
     menu.classList.add("open");
     document.body.style.overflow = "hidden"; 
 }
 
 function closeMenu() {
+    menuList.removeEventListener('click', onLinkClickClose);
+    menuLink.removeEventListener('click', onLinkClickClose);
     menu.classList.remove("open");
     document.body.style.overflow = ""; 
 }
