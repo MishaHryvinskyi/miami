@@ -1,9 +1,16 @@
-.gallery__item:not(:last-child) {
-    margin-bottom: 40px;
+.gallery__item {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
 }
 
 .gallery__img-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-img {
@@ -24,8 +31,13 @@
         margin-right: 20px;
     }
 
-    .gallery__item:not(:last-child) {
-        margin-bottom: 32px;
+    .gallery__item {
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
     }
 
     .gallery__paragraph {

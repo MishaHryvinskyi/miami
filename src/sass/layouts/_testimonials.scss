@@ -1,5 +1,6 @@
 .testimonials__list {
-    display: flex;       
+    display: flex;   
+    align-items: center;    
 }
 
 .testimonials__item {
@@ -42,10 +43,10 @@
 
     .testimonials__item {
         width: 280px;
-    }
-
-    .testimonials__item:not(:last-child) {
-        margin: 0 0 48px 0;
+    
+        &:not(:last-child) {
+            margin: 0 0 48px 0;
+        }
     }
 
     .testimonials__title::before {
