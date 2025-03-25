@@ -15,12 +15,12 @@
         background-image: url(../images/corona.png);
     }
 
-    @media screen and(min-width: 320px) and (max-width:1019px) {
+    @media screen and (max-width:1019px) {
         font-size: var(--title-fs-mob);
         margin-bottom: 53px;
     }
 
-    @media screen and(min-width:1260px) {
+    @media screen and(min-width:1020px) {
         font-size: var(--title-fs);
         margin-bottom: 93px;
     }

@@ -1,16 +1,12 @@
 .gallery__item {
-    display: flex;
-    flex-direction: column;
-
+    @include center(flex, column, start, center);
     &:not(:last-child) {
         margin-bottom: 40px;
     }
 }
 
 .gallery__img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
 }
 
 .gallery-img {
@@ -26,7 +22,7 @@
     color: var(--accent-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 1019px) {
     .gallery-img {
         margin-right: 20px;
     }

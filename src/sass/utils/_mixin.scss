@@ -1,0 +1,16 @@
+@mixin size($width, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin center ($f: flex, $f-d: row, $ali-i: center, $jus-c: center) {
+    display: $f;
+    flex-direction: $f-d;
+    align-items: $ali-i;
+    justify-content: $jus-c;
+}
+
+@mixin fonts-size($fs: 16px, $fw: 400, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+}

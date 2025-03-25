@@ -16,7 +16,8 @@
     }
 }
 
-.btn:hover, .btn-submit:hover {
+.btn:hover, 
+.btn-submit:hover {
     color: var(--main-color);
     background-color: var(--accent-color-hover);
     box-shadow: var(--hover-shadow);
@@ -24,7 +25,8 @@
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:focus, .btn-submit:focus {
+.btn:focus, 
+.btn-submit:focus {
     color: var(--main-color);
     background-color: var(--accent-color-hover);
     box-shadow: var(--hover-shadow);
