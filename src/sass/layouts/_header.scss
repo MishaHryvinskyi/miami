@@ -1,14 +1,14 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     z-index: 2; 
     padding: 24px 0 0 0;
+    background-color: inherit;
+}
+
+.header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: inherit;
 }
 
 .header__btn {
@@ -18,6 +18,10 @@
     background-color: inherit;
 }
 
+.header__a {
+    display: block;
+}
+
 .header__link {
     padding: 0;
     display: flex;
@@ -25,11 +29,7 @@
     justify-content: center;
 }
 
-@media screen and (min-width:320px) and (max-width: 480px) {
-    .header {
-        width: 280px;
-    }
-
+@media screen and (min-width:320px) and (max-width:1019px) {
     .header__svg {
         width: 24px;
         height: 24px;
@@ -41,16 +41,14 @@
     }
 
     .header__btn,
-    .header__link {
+    .header__link { 
         width: 32px;
         height: 32px;
     }
 }
 
-@media screen and (min-width: 1260px) {
-    .header {
-        width: 1020px;
-    }
+@media screen and (min-width: 1020px) {
+    
 
     .header__svg {
         width: 32px;
