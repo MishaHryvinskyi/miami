@@ -2,26 +2,22 @@
     <h2 id="contacts" class="title">Contact us</h2>
     <div class="contacts">
         <address class="contacts__address">
-            <ul class="contacts__list">
-                <li class="contacts__item">
-                    <p class="contacts__title">Phone</p>
-                    <a class="contacts__link" href="tel:+123455555555" target="_blank" rel="noreferrer noopener">+1 234 5555-55-55</a>
-                </li>
-                <li class="contacts__item">
-                    <p class="contacts__title">Email</p>
-                    <a class="contacts__link" href="mailto:hello@miami.com" target="_blank" rel="noreferrer noopener">hello@miami.com</a>
-                </li>
-                <li class="contacts__item">
-                    <p class="contacts__title">Address</p>
-                    <a class="contacts__link"  href="https://www.google.com/maps/place/Miami,+FL" target="_blank" rel="noreferrer noopener">
-                        400 first ave. n. 
-                        <br>
-                        suite 700 
-                        <br>
-                        Minneapolis, MN 55401
-                    </a>
-                </li>
-            </ul>
+            <div class="wrapper-phone-email">
+                <p class="contacts__title">Phone</p>
+                <a class="contacts__link m-b" href="tel:+123455555555" target="_blank" rel="noreferrer noopener">+1 234 5555-55-55</a>
+                <p class="contacts__title">Email</p>
+                <a class="contacts__link m-b" href="mailto:hello@miami.com" target="_blank" rel="noreferrer noopener">hello@miami.com</a>
+            </div>
+            <div class="addres-wrapper">
+                <p class="contacts__title">Address</p>
+                <a class="contacts__link"  href="https://www.google.com/maps/place/Miami,+FL" target="_blank" rel="noreferrer noopener">
+                    400 first ave. n. 
+                    <br>
+                    suite 700 
+                    <br>
+                    Minneapolis, MN 55401
+                </a>
+            </div>
         </address>
         <form class="contacts__form">
             <input class="contacts__inputs" type="text" placeholder="Name">

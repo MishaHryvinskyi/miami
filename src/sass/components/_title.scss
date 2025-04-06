@@ -1,26 +1,22 @@
 .title {
+    margin-bottom: 53px;
     color: var(--main-text-color);
     text-align: center;
+    font-size: var(--title-fs-mob);
     font-weight: 700;
     line-height: 1; 
     letter-spacing: -1.5px;
 
     &::after {
         content: "";
-        display: flex;
-        width: 24px;
-        height: 24px;
+        display: block;
+        @include size(24px, 24px);
         margin: 0 auto;
         background-size: contain;
         background-image: url(../images/corona.png);
     }
 
-    @media screen and (max-width:1019px) {
-        font-size: var(--title-fs-mob);
-        margin-bottom: 53px;
-    }
-
-    @media screen and(min-width:1020px) {
+    @media screen and(min-width:1200px) {
         font-size: var(--title-fs);
         margin-bottom: 93px;
     }
