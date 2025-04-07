@@ -1,15 +1,24 @@
 .hero {
     position: absolute;
     top: 0;
-   
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 407px 0 80px 0;
+    background: url(../images/hero/background-hero-mobile-1x.jpg) center / cover no-repeat;
+
+    @include retina(2) {
+        background: url(../images/hero/background-hero-mobile-2x.jpg)center / cover no-repeat;
+    }
+
+    @include retina(3) {
+        background: url(../images/hero/background-hero-mobile-3x.jpg)center / cover no-repeat;
+    }
 }
 
 .hero__title {
     color: var(--main-color);
+    font-size: 46px;
     font-weight: 700;
+    line-height: 1.15; 
     letter-spacing: -1.5px;
 
     &::before {
@@ -26,79 +35,19 @@
     display: block;
 }
 
-@media screen and (min-width: 320px) and (max-width:1199px) {
-    .hero {
-        padding: 407px 0 80px 0;
-        background-image: url(../images/hero/background-hero-mobile-1x.jpg);
-    }
-
-    @media screen and (min-device-pixel-rato: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero {
-                background-image: url(../images/hero/background-hero-mobile-2x.jpg);
-            }
-        }
-
-        @media screen and (min-device-pixel-rato: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            .hero {
-                background-image: url(../images/hero/background-hero-mobile-3x.jpg);
-            }
-        }
-
-        @media screen and (min-device-pixel-rato: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-            .hero {
-                background-image: url(../images/hero/background-hero-mobile-4x.jpg);
-            }
-        }
-
-    .hero__title {
-        font-size: 46px;
-        line-height: 1.15; 
-    }
-}
-
 @media screen and (min-width: 1200px) {
     .hero {
         padding: 459px 0 80px 0;
-        background-image: url(../images/hero/background-hero.jpg);
-        background-size:cover;
-        background-position: center;
+        background: url(../images/hero/background-hero.jpg)center / cover no-repeat;
 
-        @media screen and (min-device-pixel-rato: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero {
-                background-image: url(../images/hero/background-hero-2x.jpg);
-            }
-        }
+        @include retina(2) {
+            background: url(../images/hero/background-hero-2x.jpg)center / cover no-repeat;
         }
 
-        @media screen and (min-device-pixel-rato: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            .hero {
-                background-image: url(../images/hero/background-hero-3x.jpg);
-            }
+        @include retina(3) {
+            background: url(../images/hero/background-hero-3x.jpg)center / cover no-repeat;
         }
-
-        @media screen and (min-device-pixel-rato: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-            .hero {
-                background-image: url(../images/hero/background-hero-mobile-4x.jpg);
-            }
-        }
+    }
 
     .hero__title {
         font-size: 80px;
