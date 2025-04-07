@@ -6,6 +6,7 @@
 }
 
 .header-wrapper {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,40 +30,51 @@
     justify-content: center;
 }
 
-@media screen and (min-width:320px) and (max-width:1199px) {
-    .header__svg {
-        width: 24px;
-        height: 24px;
-    }
+.header__link-phone {
+    position: relative;
 
-    .header__svg-logo {
-        width: 82px;
-        height: 48px;
-    }
-
-    .header__btn,
-    .header__link { 
-        width: 32px;
-        height: 32px;
-    }
+    &:hover  .header__phone{
+        transform: translate(-20px);
+        visibility: visible;
+        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
 }
 
-@media screen and (min-width: 1200px) {
-    
+.header__phone {
+    top:0;
+    right: 0;
+    width: 128px;
+    position: absolute;
+    color: white;
+    transform: translate(180px);
+    display: block;
+    margin-right: 16px;
+    visibility: hidden;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
     .header__svg {
-        width: 32px;
-        height: 32px;
+        @include size(24px, 24px);
     }
 
     .header__svg-logo {
-        width: 136px;
-        height: 80px;
+        @include size(82px, 48px);
     }
 
-    .header__btn,
-    .header__link {
-        width: 40px;
-        height: 40px;
+    .header__btn { 
+        @include size(32px, 32px);
+    }
+
+@media screen and (min-width: 1200px) {
+    .header__svg {
+        @include size(32px, 32px);
+    }
+
+    .header__svg-logo {
+        @include size(136px, 80px);
+    }
+
+    .header__btn {
+        @include size(40px, 40px);
     }
 }
