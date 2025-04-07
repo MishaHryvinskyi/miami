@@ -1,9 +1,13 @@
 .contacts__title {
     color: var(--secondary-color);
+    width: 280px;
+    font-size: var(--smal-text);
+    margin-bottom: 8px
 }
 
 .contacts__link {
     color: var(--secondari-darc-color);
+    display: block;
 }
 
 .contacts__inputs {
@@ -30,29 +34,18 @@
     margin-bottom: 32px;
 }
 
-    .contacts__title {
-        width: 280px;
-        font-size: var(--smal-text);
-        margin-bottom: 8px
-    }
-    
-    .contacts__link {
-        width: 280px;
-    }
+.contacts__address {
+    margin-bottom: 32px;
+}
 
-    .contacts__address {
-        margin-bottom: 32px;
-    }
+.contacts__inputs,
+.contacts__area {
+    width: 100%;
+}
 
-    .contacts__inputs,
-    .contacts__area {
-        width: 100%;
-    }
-
-
-    .m-b {
-        margin-bottom: 24px;
-    }
+.m-b {
+    margin-bottom: 24px;
+}
 
 @media screen and (min-width: 1200px) {
     .contacts {
@@ -90,5 +83,9 @@
     .contacts__form {
         display: flex;
         flex-direction: column;
+    }
+
+    a[href="mailto:hello@miami.com"] {
+        margin-bottom: 0;
     }
 }
