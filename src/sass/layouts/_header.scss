@@ -5,6 +5,15 @@
     background-color: inherit;
 }
 
+.menu-btn__hover {
+    opacity: 0;
+    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-btn {
+    opacity: 1;
+    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-wrapper {
     overflow: hidden;
     display: flex;
@@ -53,17 +62,24 @@
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-    .header__svg {
-        @include size(24px, 24px);
-    }
+.header__svg {
+    @include size(24px, 24px);
 
-    .header__svg-logo {
-        @include size(82px, 48px);
+    &:hover .menu-btn__hover {
+        opacity: 1;
     }
+    &:hover .menu-btn {
+        opacity: 0;
+    }
+}
 
-    .header__btn { 
-        @include size(32px, 32px);
-    }
+.header__svg-logo {
+    @include size(82px, 48px);
+}
+
+.header__btn { 
+    @include size(32px, 32px);
+}
 
 @media screen and (min-width: 1200px) {
     .header__svg {
